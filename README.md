@@ -40,14 +40,6 @@ This project runs **two web servers**:
 - **MLflow UI** (experiment tracking): `http://localhost:5000`
 - **Model API** (FastAPI serving): `http://localhost:8000`
 
-## Screenshots
-
-**MLflow UI (http://localhost:5000)**  
-<img src="docs/localhost_5000.png" alt="MLflow UI on localhost:5000" width="900" />
-
-**Model API (http://localhost:8000)**  
-<img src="docs/localhost_8000.png" alt="FastAPI on localhost:8000" width="900" />
-
 Both commands are **blocking** (they keep running). Open the URL in your browser while the command is running.
 
 ---
@@ -157,4 +149,3 @@ pkill -f "uvicorn mlops_box.serving.app" || true
 ```
 # License
 Apache License 2.0
-
