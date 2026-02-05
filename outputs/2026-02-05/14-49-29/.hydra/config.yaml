@@ -1,0 +1,19 @@
+data:
+  n_samples: 3000
+  n_features: 30
+  n_informative: 10
+  n_redundant: 5
+  class_sep: 1.2
+  flip_y: 0.02
+  test_size: 0.2
+  val_size: 0.2
+model:
+  type: logreg
+  C: 1.0
+  max_iter: 400
+seed: 42
+run_name: demo
+out_dir: runs/${now:%Y%m%d_%H%M%S}
+mlflow:
+  tracking_uri: file:./mlruns
+  experiment: mlops-in-a-box
